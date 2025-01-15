@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-     margin: 15px 168px;
+    margin: 15px 168px;
 }
 .nav-bar h3{
     font-size: 45px;
@@ -227,4 +227,125 @@ main{
     border: none;
     font-size: 16px;
     margin-bottom: 10px;
+}
+.hide{
+    display: none;
+}
+
+/* Responsive area */
+
+/* small divice */
+@media screen and (max-width:576px){
+    .section-two .skill-cointainer, .nav-bar, .bannar, .nav-bar ul, .section-three .resume-container{
+        flex-direction: column;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+    main{
+        margin: 130px 30px;
+    }
+    .footer{
+        padding: 50px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .massage-area{
+        width: 100%;
+    }
+    .section-one .personal-inf{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 10px;
+        padding: 10px 10px;
+    }
+    .section-one{
+        padding: 10px 10px;
+    }
+    .bannar{
+        background-image: none;
+    }
+    .nav-bar{
+        margin:0px 15px;;
+    }
+    .image-contain img{
+        width: 100%;
+    }
+    .bannar .left-contain{
+        width: 100%;
+        position: static;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+}
+/* medium divice */
+@media screen and (min-width:576px) and (max-width:992px){
+    .section-two .skill-cointainer{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    main{
+        margin: 130px 30px;
+    }
+    .section-three .resume-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .footer{
+        padding: 60px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .massage-area{
+        width: 100%;
+    }
+    .section-one .personal-inf{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 20px;
+        padding: 20px 20px;
+    }
+    .section-one{
+        padding: 20px 20px;
+    }
+    .bannar{
+        background-image: none;
+        margin: 5px 0px 0px 5px;
+        padding: 0 0 0 20px;
+    }
+    .nav-bar{
+        margin:0px 15px;;
+    }
+    .image-contain img{
+        width: 100%;
+    }
+    .bannar .left-contain{
+        width: 100%;
+        position: static;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+}
+/* large divice */
+@media screen and (min-width:992px) and (max-width:1200px){
+    .section-two .skill-cointainer{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    main{
+        margin: 130px 30px;
+    }
+    .section-three .resume-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .footer{
+        padding: 30px 30px;
+    }
+    .section-one .personal-inf, .section-one{
+        padding: 40px 40px;
+    }
 }
